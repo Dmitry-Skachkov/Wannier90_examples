@@ -19,7 +19,7 @@ The sript [job_wannier90](https://github.com/Dmitry-Skachkov/Wannier90_examples/
      > mpirun -np $PPN pw.x -ni 1 -nk 1 -nt 1 -nd 1 -nb 1 -input scf.in > scf.out   
 - pre-process with Wannier90   
      > mpirun   -np $PPN  wannier90.x -pp d    
-- convert files for Wannier90 using pw2wannier90 module from QE   
+- convert files for Wannier90 using pw2wannier90 module from QE package   
      > mpirun   -np $PPN  pw2wannier90.x -in pw2wan.in > pw2wan.out
 - calculate Wannier orbitals
      > mpirun   -np $PPN  wannier90.x d   
