@@ -31,5 +31,5 @@ The sript [job_wannier90](https://github.com/Dmitry-Skachkov/Wannier90_examples/
 The result of the Wannier90 program is three xsf files with the orbitals: d_00001.xsf ... d_00003.xsf 
    
 You can compare the band structure calculated in QE with the wannier-interpolated band structure in Wannier90:
- > gnuplot plot.gnu
+ > gnuplot [plot.gnu](https://github.com/Dmitry-Skachkov/Wannier90_examples/blob/main/Example_1/plot.gnu)
 The result is [here]
