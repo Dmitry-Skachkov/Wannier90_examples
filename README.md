@@ -16,7 +16,7 @@ Copy input files from [Example_1 directory](https://github.com/Dmitry-Skachkov/W
 The sript [job_wannier90](https://github.com/Dmitry-Skachkov/Wannier90_examples/blob/main/Example_1/job_wannier90)  will execute the following calculations  
 
 - QE scf for ground state of SrVO<sub>3</sub> system
-     > mpirun -np $PPN pw.x -ni 1 -nk 1 -nt 1 -nd 1 -nb 1 -input scf.in > scf.out   
+     > mpirun -np $PPN pw.x -ni 1 -nk 1 -nt 1 -nd 1 -nb 1 -input [scf.in](https://github.com/Dmitry-Skachkov/Wannier90_examples/blob/main/Example_1/scf.in) > scf.out   
 - pre-process with Wannier90   
      > mpirun   -np $PPN  wannier90.x -pp d    
 - convert files for Wannier90 using pw2wannier90 module from QE package   
