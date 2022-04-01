@@ -17,7 +17,7 @@ and download the pseudopotential files from [THEOS library](http://theossrv1.epf
 The sript [job_wannier90](https://github.com/Dmitry-Skachkov/Wannier90_examples/blob/main/Example_1/job_wannier90)  will execute the following calculations  
 
 - QE scf for ground state of SrVO<sub>3</sub> system
-> mpirun -np $PPN pw.x -ni 1 -nk 1 -nt 1 -nd 1 -nb 1 -input scf.in > scf.out   
+     > mpirun -np $PPN pw.x -ni 1 -nk 1 -nt 1 -nd 1 -nb 1 -input scf.in > scf.out   
 - pre-process with Wannier90
 - convert files for Wannier90
 - calculate Wannier orbitals
