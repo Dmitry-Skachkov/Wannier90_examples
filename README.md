@@ -6,8 +6,7 @@ The example is taken from [here](https://issp-center-dev.github.io/DCore/master/
 
 # Example 1. SrVO<sub>3</sub>
 
-Copy input files from [Example_1 directory]()  
-and download the pseudopotential files from [THEOS library](http://theossrv1.epfl.ch/Main/Pseudopotentials)
+Copy input files from [Example_1 directory](https://github.com/Dmitry-Skachkov/Wannier90_examples/tree/main/Example_1) to your local directory and download the pseudopotential files from [THEOS library](http://theossrv1.epfl.ch/Main/Pseudopotentials)
 
 > wget http://theossrv1.epfl.ch/uploads/Main/NoBackup/Sr.pbe-spn-kjpaw_psl.0.2.3.upf   
 > wget http://theossrv1.epfl.ch/uploads/Main/NoBackup/V.pbe-spn-kjpaw_psl.0.2.3.upf   
