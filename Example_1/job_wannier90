@@ -4,8 +4,8 @@
 #SBATCH --ntasks-per-node=4
 #SBATCH --job-name=test_wannier90
 #SBATCH --mail-type=END
-#SBATCH --account=mleuenberger
-#SBATCH --mail-user=d.g.skachkov@gmail.com
+#SBATCH --account=account
+#SBATCH --mail-user=mail@gmail.com
 #SBATCH --error=error.txt
 #SBATCH --output=output.txt
 
