@@ -18,9 +18,15 @@ The sript [job_wannier90](https://github.com/Dmitry-Skachkov/Wannier90_examples/
 
 - QE scf for ground state of SrVO<sub>3</sub> system
      > mpirun -np $PPN pw.x -ni 1 -nk 1 -nt 1 -nd 1 -nb 1 -input scf.in > scf.out   
-- pre-process with Wannier90
-- convert files for Wannier90
+- pre-process with Wannier90   
+     > mpirun   -np $PPN  wannier90.x -pp d    
+- convert files for Wannier90 using pw2wannier90 module from QE   
+     > mpirun   -np $PPN  pw2wannier90.x -in pw2wan.in > pw2wan.out
 - calculate Wannier orbitals
+     > mpirun   -np $PPN  wannier90.x d   
+- calculate band structure with QE  
+     > mpirun -np $PPN pw.x -ni 1 -nk 1 -nt 1 -nd 1 -nb 1 -input bands.in > bands.out
+     > mpirun -np $PPN bands.x  -input bandsx.in > bandsx.out   
 
 
-
+   
