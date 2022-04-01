@@ -26,7 +26,7 @@ module unload espresso
 ### Wannier90 preprocessing
 module load wannier90/wannier90-3.1.0-oneapi-2021.2.0
 mpirun   -np $PPN  wannier90.x -pp d  
-module unload wannier
+module unload wannier90
 
 ### Quantum Espresso transform to Wannier90
 module load espresso/espresso-6.6-mvapich2-2.3.1-ic-2019.3.199
@@ -36,7 +36,7 @@ module unload espresso
 ### Wannier90 wannierization
 module load wannier90/wannier90-3.1.0-oneapi-2021.2.0
 mpirun   -np $PPN  wannier90.x d
-module unload wannier
+module unload wannier90
 
 ### Quantum Espresso check wannierization
 module load espresso/espresso-6.6-mvapich2-2.3.1-ic-2019.3.199
