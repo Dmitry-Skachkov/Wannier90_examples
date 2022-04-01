@@ -22,7 +22,7 @@ The sript [job_wannier90](https://github.com/Dmitry-Skachkov/Wannier90_examples/
 - convert files for Wannier90 using pw2wannier90 module from QE package   
      > mpirun   -np $PPN  pw2wannier90.x -in [pw2wan.in](https://github.com/Dmitry-Skachkov/Wannier90_examples/blob/main/Example_1/pw2wan.in) > pw2wan.out
 - calculate Wannier orbitals
-     > mpirun   -np $PPN  wannier90.x [d](https://github.com/Dmitry-Skachkov/Wannier90_examples/blob/main/Example_1/d.win)   
+     > mpirun   -np $PPN  wannier90.x [d ](https://github.com/Dmitry-Skachkov/Wannier90_examples/blob/main/Example_1/d.win)   
 - calculate band structure with QE  
      > mpirun -np $PPN pw.x -ni 1 -nk 1 -nt 1 -nd 1 -nb 1 -input [bands.in](https://github.com/Dmitry-Skachkov/Wannier90_examples/blob/main/Example_1/bands.in) > bands.out    
      > mpirun -np $PPN bands.x  -input [bandsx.in](https://github.com/Dmitry-Skachkov/Wannier90_examples/blob/main/Example_1/bandsx.in) > bandsx.out   
