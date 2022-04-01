@@ -25,7 +25,7 @@ The sript [job_wannier90](https://github.com/Dmitry-Skachkov/Wannier90_examples/
 - calculate Wannier orbitals
      > mpirun   -np $PPN  wannier90.x d   
 - calculate band structure with QE  
-     > mpirun -np $PPN pw.x -ni 1 -nk 1 -nt 1 -nd 1 -nb 1 -input bands.in > bands.out
+     > mpirun -np $PPN pw.x -ni 1 -nk 1 -nt 1 -nd 1 -nb 1 -input bands.in > bands.out    
      > mpirun -np $PPN bands.x  -input bandsx.in > bandsx.out   
 
 
