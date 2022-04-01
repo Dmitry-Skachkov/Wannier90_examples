@@ -1,2 +1,2 @@
-# Examples of Wannier90
+# Examples Quantum Espresso - Wannier90
 
