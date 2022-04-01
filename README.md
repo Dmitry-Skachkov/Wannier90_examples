@@ -33,7 +33,8 @@ d_00001.xsf
 d_00001.xsf   
 d_00003.xsf   
 ```   
-and parameters of Wannier orbitals in output file [d.wout](https://github.com/Dmitry-Skachkov/Wannier90_examples/blob/main/Example_1/results/d.wout)   
+and parameters of Wannier orbitals in output file [d.wout](https://github.com/Dmitry-Skachkov/Wannier90_examples/blob/main/Example_1/results/d.wout)  
+The Hamiltonian parameters are written to the file [d_hr.dat](https://github.com/Dmitry-Skachkov/Wannier90_examples/blob/main/Example_1/results/d_hr.dat)
 
 You can plot the orbitals with [VESTA](https://jp-minerals.org/vesta/en/) software:
 
