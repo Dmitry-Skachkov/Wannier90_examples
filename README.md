@@ -3,11 +3,10 @@
 - [Quantum Espresso + Wannier90](#example-1-srvo3)
 - [Quantum Espresso + Yambo GW + Wannier90](#example-2)
 
+# Example 1. SrVO<sub>3</sub>
+
 Test example for Quantum Espresso + Wannier90 on Stokes Supercluster of UCF.  
 The example is taken from [here](https://issp-center-dev.github.io/DCore/master/tutorial/srvo3/qe/qe.html)
-
-
-# Example 1. SrVO<sub>3</sub>
 
 Copy input files from [Example_1 directory](https://github.com/Dmitry-Skachkov/Wannier90_examples/tree/main/Example_1) to your local directory and download the pseudopotential files from [THEOS library](http://theossrv1.epfl.ch/Main/Pseudopotentials)
 
