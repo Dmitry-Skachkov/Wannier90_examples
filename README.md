@@ -5,7 +5,7 @@
 
 # Example 1. SrVO<sub>3</sub>
 
-Test example for [Quantum Espresso](https://www.quantum-espresso.org/) + [Wannier90](http://www.wannier.org/) on [Stokes Supercluster of UCF](https://arcc.ist.ucf.edu/).  
+Test example for [Quantum Espresso](https://www.quantum-espresso.org/) + [Wannier90](http://www.wannier.org/).  
 The example is taken from [here](https://issp-center-dev.github.io/DCore/master/tutorial/srvo3/qe/qe.html)
 
 Copy input files from [Example_1 directory](Example_1) to your local directory and download the pseudopotential files from [THEOS library](http://theossrv1.epfl.ch/Main/Pseudopotentials)
