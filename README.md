@@ -33,6 +33,10 @@ Compile the program:
 
 > make
 
+Copy executables into *bin* directory:
+
+> cp *.x ~/bin
+
 # Example 1. SrVO<sub>3</sub>
 
 Test example for [Quantum Espresso](https://www.quantum-espresso.org/) + [Wannier90](http://www.wannier.org/).  
