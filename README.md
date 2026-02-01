@@ -1,6 +1,6 @@
 # Wannier90 usage
 
-- Installation
+- [Installation](#installation-on-stokes-cluster)
 - [Quantum Espresso + Wannier90](#example-1-srvo3)
 - [Quantum Espresso + Yambo GW + Wannier90](#example-2)
 
