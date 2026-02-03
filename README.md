@@ -140,7 +140,7 @@ This run creates file *silicon.gw.unsorted.eig* which is necessary to copy to th
 
 > cp silicon.gw.unsorted.eig ..
 
-Run Python script in order to update Wannier90 files to include GW correction:
+Run Python script in order to update Wannier90 files to include GW correction (you need to have the Python3 module with installed numpy and scipy modules):
 
 > python3 /Wannier90/utility/gw2wannier90.py silicon mmn amn
 
