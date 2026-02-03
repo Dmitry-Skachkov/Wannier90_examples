@@ -90,6 +90,14 @@ Run QE scf and nscf calculations:
 
 > pw.x < silicon.gw.nscf > nscf.gw.out
 
+Enter directory *si.save* and prepare Yambo calculation:
+
+> cd si.save
+
+> p2y
+
+> yambo
+
 
 
 [Go to top](#wannier90-usage)
