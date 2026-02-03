@@ -88,9 +88,9 @@ This is [**Example23**](https://wannier90.readthedocs.io/en/latest/tutorials/tut
 
 Run QE scf and nscf calculations:
 
-> pw.x < [silicon.scf](/Example_2/silicon.gw.nscf) > scf.out
+> pw.x < [silicon.scf](/Example_2/silicon.scf) > scf.out
 
-> pw.x < silicon.gw.nscf > nscf.gw.out
+> pw.x < [silicon.gw.nscf](/Example_2/silicon.gw.nscf) > nscf.gw.out
 
 Enter directory *si.save* and prepare Yambo calculation:
 
@@ -102,7 +102,7 @@ Enter directory *si.save* and prepare Yambo calculation:
 
 Then run Yambo GW calculation:
 
-> yambo -F yambo_G0W0.in
+> yambo -F [yambo_G0W0.in](/Example_2/yambo_G0W0.in)
 
 Go to directory with QE calculation:
 
@@ -110,15 +110,19 @@ Go to directory with QE calculation:
 
 and run *nscf* calculation using uniform k-mesh:
 
-> pw.x < silicon.nscf > nscf.out
+> pw.x < [silicon.nscf](/Example_2/silicon.nscf) > nscf.out
 
 Run Wannier90 preprocessing:
 
 > wannier90.x -pp silicon
 
+This run uses [silicon.win](/Example_2/silicon.win) input file.
+
 Run *pw2wannier90.x* task:
 
-> pw2wannier90.x < silicon.pw2wan > pw2wan.out
+> pw2wannier90.x < [silicon.pw2wan](/Example_2/silicon.pw2wan) > pw2wan.out
+
+This run creates several files: 
 
 Copy *silicon.nnkp* file into *si.save* directory:
 
@@ -127,6 +131,8 @@ Copy *silicon.nnkp* file into *si.save* directory:
 > cd si.save
 
 > ypp
+
+*ypp* program uses [ypp.in](/Example_2/ypp.in) input file. 
 
 This run creates file *silicon.gw.unsorted.eig* which is necessary copy to the main directory:
 
@@ -139,6 +145,8 @@ Run Python script in order to update Wannier90 files including GW correction:
 Run Wannier90 program to compute GW corrected MLWFs:
 
 > wannier90.x silicon.gw
+
+This run uses [silicon.gw.win](/Example_2/silicon.gw.win) input file.
 
 
 [Go to top](#wannier90-usage)
