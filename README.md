@@ -88,7 +88,7 @@ This is [**Example23**](https://wannier90.readthedocs.io/en/latest/tutorials/tut
 
 Run QE scf and nscf calculations:
 
-> pw.x < silicon.scf > scf.out
+> pw.x < [silicon.scf](/Example_2/silicon.gw.nscf) > scf.out
 
 > pw.x < silicon.gw.nscf > nscf.gw.out
 
