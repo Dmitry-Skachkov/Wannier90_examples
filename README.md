@@ -82,7 +82,7 @@ The result is [here](Example_1/results/Band_QE_vs_Wannier.pdf)
 
 [Go to top](#wannier90-usage)
 
-# Example 2. 
+# Example 2. Silicon G0W0 corrected MLWFs
 
 Run QE scf and nscf calculations:
 
