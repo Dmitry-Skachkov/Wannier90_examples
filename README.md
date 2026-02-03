@@ -98,6 +98,43 @@ Enter directory *si.save* and prepare Yambo calculation:
 
 > yambo
 
+Then run Yambo GW calculation:
+
+> yambo -F yambo_G0W0.in
+
+Go to directory with QE calculation:
+
+> cd ..
+
+and run *nscf* calculation using uniform k-mesh:
+
+> pw.x < silicon.nscf > nscf.out
+
+Run Wannier90 preprocessing:
+
+> wannier90.x -pp silicon
+
+Run *pw2wannier90.x* task:
+
+> pw2wannier90.x < silicon.pw2wan > pw2wan.out
+
+Copy *silicon.nnkp* file into *si.save* directory:
+
+> cp silicon.nnkp si.save
+
+> cd si.save
+
+> ypp
+
+This run creates file *silicon.gw.unsorted.eig* which is necessary copy to the main directory:
+
+> cp silicon.gw.unsorted.eig ..
+
+Run Python script in order to update Wannier90 files including GW correction:
+
+> python3 /Wannier90/utility/gw2wannier90.py silicon mmn amn
+
+
 
 
 [Go to top](#wannier90-usage)
