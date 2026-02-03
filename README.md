@@ -86,11 +86,13 @@ The result is [here](Example_1/results/Band_QE_vs_Wannier.pdf)
 
 This is [**Example23**](https://wannier90.readthedocs.io/en/latest/tutorials/tutorial_23/) from Wannier90 package. 
 
-Run QE scf and nscf calculations:
+Run QE scf and nscf calculations using 8x8x8 k-mesh:
 
 > pw.x < [silicon.scf](/Example_2/silicon.scf) > scf.out
 
 > pw.x < [silicon.gw.nscf](/Example_2/silicon.gw.nscf) > nscf.gw.out
+
+QE generates 29 unique IBZ k-mesh pints.
 
 Enter directory *si.save* and prepare Yambo calculation:
 
@@ -100,7 +102,7 @@ Enter directory *si.save* and prepare Yambo calculation:
 
 > yambo
 
-Then run Yambo GW calculation:
+Then run Yambo GW calculation for all 29 k-points:
 
 > yambo -F [yambo_G0W0.in](/Example_2/yambo_G0W0.in)
 
@@ -108,7 +110,7 @@ Go to directory with QE calculation:
 
 > cd ..
 
-and run *nscf* calculation using uniform k-mesh:
+and run *nscf* calculation using uniform k-mesh 8x8x8 ():
 
 > pw.x < [silicon.nscf](/Example_2/silicon.nscf) > nscf.out
 
