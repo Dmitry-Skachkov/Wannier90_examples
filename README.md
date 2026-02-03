@@ -134,7 +134,9 @@ Run Python script in order to update Wannier90 files including GW correction:
 
 > python3 /Wannier90/utility/gw2wannier90.py silicon mmn amn
 
+Run Wannier90 program to compute GW corrected MLWFs:
 
+> wannier90.x silicon.gw
 
 
 [Go to top](#wannier90-usage)
