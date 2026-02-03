@@ -92,7 +92,7 @@ Run QE scf and nscf calculations using 8x8x8 k-mesh:
 
 > pw.x < [silicon.gw.nscf](/Example_2/silicon.gw.nscf) > nscf.gw.out
 
-QE generates 29 unique IBZ k-mesh pints.
+QE generates 29 unique IBZ k-mesh points from total 8x8x8 points.
 
 Enter directory *si.save* and prepare Yambo calculation:
 
