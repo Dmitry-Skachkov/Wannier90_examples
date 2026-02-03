@@ -84,7 +84,7 @@ The result is [here](Example_1/results/Band_QE_vs_Wannier.pdf)
 
 # Example 2. Silicon G0W0 corrected MLWFs
 
-This is [**Example23**](https://wannier90.readthedocs.io/en/latest/tutorials/tutorial_23/) from Wannier90 package. 
+This is modified [**Example23**](https://wannier90.readthedocs.io/en/latest/tutorials/tutorial_23/) from Wannier90 package. 
 
 Run QE scf and nscf calculations using 8x8x8 k-mesh:
 
@@ -102,7 +102,7 @@ Enter directory *si.save* and prepare Yambo calculation:
 
 > yambo
 
-Then run Yambo GW calculation for all 29 k-points:
+Then run Yambo GW calculation using 29 k-points:
 
 > yambo -F [yambo_G0W0.in](/Example_2/yambo_G0W0.in)
 
@@ -110,7 +110,7 @@ Go to directory with QE calculation:
 
 > cd ..
 
-and run *nscf* calculation using uniform k-mesh 4x4x4 (total 64 k-points):
+and run *nscf* calculation for uniform k-mesh 4x4x4 (total 64 k-points):
 
 > pw.x < [silicon.nscf](/Example_2/silicon.nscf) > nscf.out
 
@@ -136,11 +136,11 @@ Copy *silicon.nnkp* file into *si.save* directory:
 
 *ypp* program uses [ypp.in](/Example_2/ypp.in) input file. 
 
-This run creates file *silicon.gw.unsorted.eig* which is necessary copy to the main directory:
+This run creates file *silicon.gw.unsorted.eig* which is necessary to copy to the main directory:
 
 > cp silicon.gw.unsorted.eig ..
 
-Run Python script in order to update Wannier90 files including GW correction:
+Run Python script in order to update Wannier90 files to include GW correction:
 
 > python3 /Wannier90/utility/gw2wannier90.py silicon mmn amn
 
