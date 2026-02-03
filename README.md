@@ -110,7 +110,7 @@ Go to directory with QE calculation:
 
 > cd ..
 
-and run *nscf* calculation using uniform k-mesh 8x8x8 ():
+and run *nscf* calculation using uniform k-mesh 4x4x4 (total 64 k-points):
 
 > pw.x < [silicon.nscf](/Example_2/silicon.nscf) > nscf.out
 
