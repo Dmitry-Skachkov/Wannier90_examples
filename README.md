@@ -84,5 +84,13 @@ The result is [here](Example_1/results/Band_QE_vs_Wannier.pdf)
 
 # Example 2. 
 
+Run QE scf and nscf calculations:
+
+> pw.x < silicon.scf > scf.out
+
+> pw.x < silicon.gw.nscf > nscf.gw.out
+
+
+
 [Go to top](#wannier90-usage)
 
