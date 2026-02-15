@@ -1,4 +1,4 @@
-# Monolayer MoS$_2$ example
+# Monolayer MoS<sub>_2</sub> example
 
 Generate k-mesh with kmesh.pl utility from /Wannier90/utility/ folder
 
