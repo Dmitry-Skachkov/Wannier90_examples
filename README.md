@@ -48,6 +48,11 @@ Copy input files from [Example_1 directory](Example_1) to your local directory a
 > wget http://theossrv1.epfl.ch/uploads/Main/NoBackup/V.pbe-spn-kjpaw_psl.0.2.3.upf   
 > wget http://theossrv1.epfl.ch/uploads/Main/NoBackup/O.pbe-n-kjpaw_psl.0.1.upf   
 
+Generate k-mesh with *kmesh.pl* utility from /Wannier90/utility/ folder
+
+> kmesh.pl 4 4 4
+
+for scf calculation with QE.
 
 The script [job_wannier90](Example_1/job_wannier90)  will execute the following calculations  
 
