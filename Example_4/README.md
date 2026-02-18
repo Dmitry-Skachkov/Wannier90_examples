@@ -1,6 +1,6 @@
 # Monolayer MoS<sub>2</sub> example
 
-In this example we optimize band structure for MoS<sub>2</sub> for VBM, CBM, and CBM+1 bands using 3 Wannier functions.
+In this example we build tigh-binding model for MoS<sub>2</sub> for VBM, CBM, and CBM+1 bands using 3 Wannier functions.
 
 Generate k-mesh with *kmesh.pl* utility from /Wannier90/utility/ folder
 
@@ -78,7 +78,7 @@ Run pw2wannier90.x
 
 > pw2wannier90.x -in [pw2wan.in](pw2wan.in)
 
-Run Wannier90 to calculate optimized Wannier functions and calculate band structure: 
+Run Wannier90 to calculate optimized Wannier functions and calculate band structure with Wannier functions: 
 
 > wannier90.x d
 
