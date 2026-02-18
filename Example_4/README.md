@@ -45,6 +45,16 @@ begin kpoint_path
   K 0.666667 -0.333333 0.0  G 0.0       0.0      0.0
 end kpoint_path
 ```
+
+For MoS<sub>2</sub> the three band model can be built using Mo dz2, dxy, and dx2-y2 orbitals:
+```
+begin projections
+Mo:dz2
+Mo:dxy
+Mo:dx2-y2
+end projections
+```
+
 In order to find 3 Wannier functions, we need to provide the frozen energy zone where we have only 3 bands:
 ```
 dis_froz_min  = -1.90
