@@ -1,6 +1,6 @@
 # Monolayer MoS<sub>2</sub> example
 
-In this example we build tigh-binding model for MoS<sub>2</sub> for VBM, CBM, and CBM+1 bands using 3 Wannier functions.
+This example uses 11 orbital model for MoS<sub>2</sub>: 5 d-orbitals for Mo, and 3 p-orbitals for each S atom.
 
 Generate k-mesh with *kmesh.pl* utility from /Wannier90/utility/ folder
 
@@ -46,26 +46,18 @@ begin kpoint_path
 end kpoint_path
 ```
 
-For MoS<sub>2</sub> the three band model can be built using Mo dz2, dxy, and dx2-y2 orbitals:
+For MoS<sub>2</sub> we use all orbitals for Mo and S atoms:
 ```
 begin projections
-Mo:dz2
-Mo:dxy
-Mo:dx2-y2
+Mo:d
+S:p
 end projections
 ```
 
-In order to find 3 Wannier functions, we need to provide the frozen energy zone where we have only 3 bands:
+The frozen energy zone contains all 11 bands:
 ```
-dis_froz_min  = -1.90
-dis_froz_max  =  1.53
-```
-If the program finds more than 3 bands in any k-point, then it will stop with the corresponding message, and you need to narrow the frozen energy zone.
-
-We need to use wider energy window to search the corresponding bands in disentanglement process:
-```
-dis_win_min   = -5.0
-dis_win_max   =  4.5
+dis_froz_min  = -7.8
+dis_froz_max  =  4.0
 ```
 
 Run Wannier90 preprocessing:
