@@ -1,0 +1,58 @@
+&CONTROL
+ calculation = 'bands'
+      outdir = './'
+  pseudo_dir = './'
+      prefix = 'd'
+/
+
+&SYSTEM
+    ibrav = 4
+    a = 3.1804152595
+    c = 20
+    nat = 3
+    ntyp = 2
+    ecutwfc = 60
+    occupations = 'fixed'
+    input_dft = 'pbe'
+    nosym = .true.
+    nbnd = 40
+!    starting_magnetization(1)=0.01
+!    starting_magnetization(2)=0.01
+!    noncolin                 = .TRUE.
+!    lspinorb                 = .TRUE.
+!    tot_charge = 0
+/
+
+&ELECTRONS
+    diagonalization = 'david'
+    diago_thr_init = 1e-6
+    mixing_mode = 'plain'
+    mixing_beta = 0.7
+    conv_thr =  1e-9
+    electron_maxstep = 200
+    diago_full_acc = .true.
+    startingpot = 'file'
+/
+ATOMIC_SPECIES
+Mo 95.9600   Mo_ONCV_PBE_FR-1.0.upf
+S  32.0600   S_ONCV_PBE_FR-1.1.upf
+
+ATOMIC_POSITIONS (angstrom)
+Mo     0.001720428        -0.000261307         3.020250797
+S      1.591346502         0.917342544         1.456984282
+S      1.592797279         0.918367922         4.581565380
+
+!K_POINTS crystal_b
+!4
+!0.0 0.0 0.0 10  ! Γ
+!1/3 1/3 0.0 10  ! K
+!0.5 0.0 0.0 10  ! M
+!0.0 0.0 0.0 10  ! Γ
+
+
+K_POINTS crystal_b
+4                           # total number of high-symmetry points
+gG   10                     # point Gamma with 10 intermediate points to next high-symmetry point 
+M    10
+K    10
+gG   10
