@@ -23,7 +23,7 @@ K_POINTS crystal_b
 gG   10                     # point Gamma with 10 intermediate points to next high-symmetry point 
 M    10
 K    10
-gG   10
+gG   1
 ```
 
 In order to run Wannier90 we need again to calculate QE, because calculation of band structure destroys the QE data files:
