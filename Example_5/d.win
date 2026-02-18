@@ -21,13 +21,11 @@ S:p
 end projections
 
 
-site_symmetry = .true.
+site_symmetry = .false.
 write_hr      = .true.
 bands_plot    = .true.
 wannier_plot  = .true.
 write_xyz     = .true.
-write_dmn     = .false.
-use_ws_distance = .true.
 
 
 wannier_plot_supercell = 2 2 1
