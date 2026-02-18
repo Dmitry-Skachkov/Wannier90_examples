@@ -28,7 +28,7 @@ In order to run Wannier90 we need again to calculate QE, because calculation of 
 
 > pw.x < scf.in > scf.out
 
-In order to spped up the calculation we can use to start calculation from previous charge density:
+In order to speed up the calculation we can start calculation from previous charge density:
 ```
 &electrons
     startingpot = 'file'
@@ -36,7 +36,16 @@ In order to spped up the calculation we can use to start calculation from previo
 ```
  
 
-Insert the same k-mesh data into *d.win* file for Wannier90 and run preprocessing
+In order to prepare input file for Wannier90 calculation, we need to insert the same k-mesh data as in QE input. In order the band structure k-path corresponds to QE k-path,we need to extract the k-path in reciplocal crystal_b coordinates from QE output:
+```
+begin kpoint_path
+  G 0.0       0.0      0.0  M 0.5       0.0      0.0
+  M 0.5       0.0      0.0  K 0.666667 -0.333333 0.0
+  K 0.666667 -0.333333 0.0  G 0.0       0.0      0.0
+end kpoint_path
+```
+
+Run Wannier90 preprocessing:
 
 > wannier90.x -pp d
 
@@ -46,9 +55,11 @@ Run pw2wannier90.x
 
 > pw2wannier90.x -in pw2wan.in
 
-Run Wannier90 
+Run Wannier90 to calculate optimized Wannier functions and calculate band structure: 
 
 > wannier90.x d
 
 This run uses the same input file *d.win*!
+
+The figure shows calculated band structure for 3 bands using 3 Wannier functions and comparison with QE band structure:
 
