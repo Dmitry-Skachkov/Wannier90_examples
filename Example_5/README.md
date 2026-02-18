@@ -76,6 +76,10 @@ Run Wannier90 to calculate optimized Wannier functions and calculate band struct
 
 This run uses the same input file [d.win](d.win)!
 
+The output [d.wout](d.wout) contains information about disentalgment and optimization processes for Wannier functions.
+
+The file [d_hr.dat](d_hr.dat) contains the matrix elements of the Hamiltonian in Wannier function basis. 
+
 To plot band structure:
 
 > gnuplot [plot.gnu](plot.gnu)
