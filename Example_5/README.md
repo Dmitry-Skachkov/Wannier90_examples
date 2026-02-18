@@ -80,6 +80,6 @@ To plot band structure:
 
 > gnuplot [plot.gnu](plot.gnu)
 
-The figure shows calculated band structure for 3 bands using 3 Wannier functions and comparison with QE band structure:
+The figure shows calculated band structure for 11 bands using 11 Wannier functions and comparison with QE band structure:
 
 ![GitHub Logo](bands_W90_2.png)
