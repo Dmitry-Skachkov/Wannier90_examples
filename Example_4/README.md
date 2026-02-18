@@ -86,7 +86,7 @@ This run uses the same input file *d.win*!
 
 To plot band structure:
 
-> gnuplot plot.gnu
+> gnuplot [plot.gnu](plot.gnu)
 
 The figure shows calculated band structure for 3 bands using 3 Wannier functions and comparison with QE band structure:
 
