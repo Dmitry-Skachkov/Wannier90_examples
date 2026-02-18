@@ -106,7 +106,7 @@ First 5 functions correspond to Mo atom (according to WF centers x, y, z), next 
 
 Files d_00001.xsf - d_00011.xsf allow to visualize Wannier functions.
 
-First Wannier function is pure dz-like orbital:
+First Wannier function is dz2-like orbital:
 
 ![GitHub Logo](d-orbital1.png)
 
