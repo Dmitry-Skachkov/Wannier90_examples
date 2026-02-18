@@ -78,7 +78,7 @@ This run uses the same input file [d.win](d.win)!
 
 The output [d.wout](d.wout) contains information about disentalgment and optimization processes for Wannier functions.
 
-File [d_hr.dat](d_hr.dat) contains the matrix elements of the Hamiltonian in Wannier basis H<sub>mn</sub>(R<sub>C</sub>). Line 2 and 3 contain information about numer of Wannier functions (3) and total number of matrix elements (225), next few lines contain degeneracy numbers, and then follow the matrix elements:
+File [d_hr.dat](d_hr.dat) contains the matrix elements of the Hamiltonian in Wannier basis H<sub>mn</sub>(R<sub>C</sub>). Line 2 and 3 contain information about total number of Wannier functions (3) and total number of matrix elements (15x15 = 225), next few lines contain degeneracy numbers, and then follow the matrix elements:
 ```
     i    j    k    m    n     Re Hmn      Im Hmn
    -9   -5    0    1    1    0.000207   -0.000000
