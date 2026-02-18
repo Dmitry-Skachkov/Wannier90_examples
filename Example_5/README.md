@@ -87,6 +87,23 @@ File [d_hr.dat](d_hr.dat) contains the matrix elements of the Hamiltonian in Wan
 ```
 here i, j, k correspond to lattice cell R<sub>C</sub>, and m, n to Wannier function numbers.
 
+Wannier functions:
+```
+                                    x          y          z
+  WF centre and spread    1  ( -0.000110, -0.005026,  3.020251 )     1.54172012
+  WF centre and spread    2  (  0.000153,  0.045406,  3.020251 )     1.83557467
+  WF centre and spread    3  ( -0.000329, -0.045535,  3.020251 )     1.83352507
+  WF centre and spread    4  (  0.000516,  0.119880,  3.020251 )     1.69736081
+  WF centre and spread    5  ( -0.000848, -0.113467,  3.020251 )     1.70068481
+  WF centre and spread    6  (  1.591188,  0.911559,  1.353363 )     1.73996114
+  WF centre and spread    7  (  1.591423,  0.905479,  1.500671 )     1.67444195
+  WF centre and spread    8  (  1.591345,  0.934700,  1.500455 )     1.67520821
+  WF centre and spread    9  (  1.591193,  0.911562,  4.687140 )     1.73996212
+  WF centre and spread   10  (  1.591417,  0.905479,  4.539830 )     1.67444574
+  WF centre and spread   11  (  1.591345,  0.934696,  4.540046 )     1.67521074
+```
+First 5 functions correspond to Mo atom (according to WF centers x, y, z), next 3 functions belong to lower S atom, and the following 3 WFs belong to S in top. Correspondence to particular orbitals defined by the automatic assignement by Wannier90 procedure.
+
 To plot band structure:
 
 > gnuplot [plot.gnu](plot.gnu)
