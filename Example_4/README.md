@@ -36,7 +36,7 @@ In order to speed up the calculation we can start calculation from previous char
 ```
  
 
-In order to prepare input file for Wannier90 calculation, we need to insert the same k-mesh data as in QE input. In order the band structure k-path corresponds to QE k-path,we need to extract the k-path in reciplocal crystal_b coordinates from QE output:
+In order to prepare input file for Wannier90 calculation, we need to insert the same k-mesh data as in QE input, which we generated with *kmesh.pl* utility. And in order the band structure k-path corresponds to QE k-path,we need to extract the k-path in reciplocal crystal_b coordinates from QE output:
 ```
 begin kpoint_path
   G 0.0       0.0      0.0  M 0.5       0.0      0.0
