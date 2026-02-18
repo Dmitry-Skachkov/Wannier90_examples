@@ -110,7 +110,7 @@ First Wannier function is pure dz-like orbital:
 
 ![GitHub Logo](d-orbital1.png)
 
-Second Wannier function is hybridized Mo-dz and S-p:
+Second Wannier function is hybridized Mo-d and S-p:
 
 ![GitHub Logo](d-orbital2.png)
 
