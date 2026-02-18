@@ -8,13 +8,13 @@ Generate k-mesh with *kmesh.pl* utility from /Wannier90/utility/ folder
 
 Insert generated k-mesh in *scf.in* input file and run QE
 
-> pw.x < scf.in > scf.out
+> pw.x < [scf.in](scf.in) > scf.out
 
 Calculate the band structure with QE
 
-> pw.x     < bands.in  > bands.out
+> pw.x     < [bands.in](bands.in)  > bands.out
 
-> bands.x  < bandsx.in > bandsx.out
+> bands.x  < [bandsx.in](bandsx.in) > bandsx.out
 
 In *bands.in* we used automatic generation for high-symmetry k-points G-M-K-G:
 ```
@@ -72,17 +72,17 @@ Run Wannier90 preprocessing:
 
 > wannier90.x -pp d
 
-This run uses *d.win* input file.
+This run uses [d.win](d.win) input file.
 
 Run pw2wannier90.x 
 
-> pw2wannier90.x -in pw2wan.in
+> pw2wannier90.x -in [pw2wan.in](pw2wan.in)
 
 Run Wannier90 to calculate optimized Wannier functions and calculate band structure: 
 
 > wannier90.x d
 
-This run uses the same input file *d.win*!
+This run uses the same input file [d.win](d.win)!
 
 To plot band structure:
 
