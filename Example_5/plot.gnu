@@ -14,6 +14,7 @@ set arrow from 0.9107, graph 0 to 0.9107, graph 1 nohead
 set xrange [  0 : 1.57749]
 set yrange [ -16 :  10]
 
-plot "bands.out.gnu" u 1:2         with points title "Orig", 0.0000 title "E_F", \
+plot "bands.out.gnu" u 1:2         with points title "Orig", \
+      0.0000 title "E_F", \
      "d_band.dat"    u ($1/coef):2 with lines  title "Wannier" 
 
