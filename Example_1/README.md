@@ -35,7 +35,7 @@ d_00003.xsf
 ```   
 You can plot the orbitals with [VESTA](https://jp-minerals.org/vesta/en/) software:
 
-![GitHub Logo](Example_1/results/d_00003_1.png)
+![GitHub Logo](results/d_00003_1.png)
    
 The Hamiltonian matrix in Wannier function basis is written to the file [d_hr.dat](Example_1/results/d_hr.dat). The format of the file is described in the [documentation for Wannier90 software](https://github.com/wannier-developers/wannier90/raw/v3.1.0/doc/compiled_docs/user_guide.pdf) (look at Chapter 8.19 "Seedname_hr.dat")
 
