@@ -102,7 +102,7 @@ Wannier functions:
   WF centre and spread   10  (  1.591417,  0.905479,  4.539830 )     1.67444574
   WF centre and spread   11  (  1.591345,  0.934696,  4.540046 )     1.67521074
 ```
-First 5 functions correspond to Mo atom (according to WF centers x, y, z), next 3 functions belong to lower S atom, and the following 3 WFs belong to S in top. Correspondence to particular orbitals defined by the automatic assignement by Wannier90 procedure.
+First 5 functions correspond to Mo atom (according to WF centers x, y, z), next 3 functions belong to lower S atom, and the following 3 WFs belong to S in top. 
 
 To plot band structure:
 
