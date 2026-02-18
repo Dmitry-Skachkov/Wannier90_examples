@@ -1,5 +1,7 @@
 # Monolayer MoS<sub>2</sub> example
 
+In this example we optimize band structure for MoS<sub>2</sub> for VBM, CBM, and CBM+1 bands using 3 Wannier functions.
+
 Generate k-mesh with *kmesh.pl* utility from /Wannier90/utility/ folder
 
 > kmesh.pl 15 15 1
@@ -14,7 +16,7 @@ Calculate the band structure with QE
 
 > bands.x  < bandsx.in > bandsx.out
 
-In bands.in we used automatic generation for high-symmetry points G-M-K-G:
+In *bands.in* we used automatic generation for high-symmetry k-points G-M-K-G:
 ```
 K_POINTS crystal_b
 4                           # total number of high-symmetry points
@@ -28,14 +30,13 @@ In order to run Wannier90 we need again to calculate QE, because calculation of 
 
 > pw.x < scf.in > scf.out
 
-In order to speed up the calculation we can start calculation from previous charge density:
+In order to speed up this calculation we can start calculation from previous charge density:
 ```
 &electrons
     startingpot = 'file'
 /
 ```
  
-
 In order to prepare input file for Wannier90 calculation, we need to insert the same k-mesh data as in QE input, which we generated with *kmesh.pl* utility. And in order the band structure k-path corresponds to QE k-path,we need to extract the k-path in reciplocal crystal_b coordinates from QE output:
 ```
 begin kpoint_path
@@ -43,6 +44,18 @@ begin kpoint_path
   M 0.5       0.0      0.0  K 0.666667 -0.333333 0.0
   K 0.666667 -0.333333 0.0  G 0.0       0.0      0.0
 end kpoint_path
+```
+In order to find 3 Wannier functions, we need to provide the frozen energy zone where we have only 3 bands:
+```
+dis_froz_min  = -1.90
+dis_froz_max  =  1.53
+```
+If the program finds more than 3 bands in any k-point, then it will stop with the corresponding message, and you need to narrow the frozen energy zone.
+
+We need to use wider energy window to search the corresponding bands in disentanglement process:
+```
+dis_win_min   = -5.0
+dis_win_max   =  4.5
 ```
 
 Run Wannier90 preprocessing:
