@@ -2,7 +2,7 @@
 
 - [Installation](#installation-on-stokes-cluster)
 - [Example 1](#example-1-srvo3): Quantum Espresso + Wannier90
-- [Example 2](#example-2): Quantum Espresso + Yambo GW + Wannier90
+- [Example 2](#example-2-silicon-g0w0-corrected-mlwfs): Quantum Espresso + Yambo GW + Wannier90
 - [Example 3](Example_3): MoS<sub>2</sub> model for 7x7x1
 - [Example 4](Example_4): MoS<sub>2</sub> model for 15x15x1 and using 3 orbitals
 - [Example 5](Example_5): MoS<sub>2</sub> model for 15x15x1 and using 11 orbitals
