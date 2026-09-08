@@ -43,7 +43,7 @@ Copy executables into *bin* directory:
 
 # Installation on MAC computer
 
-Check that the required software is instaalled:
+Check that the required software is installed:
 
 ```
 gfortran --version
