@@ -43,6 +43,14 @@ Copy executables into *bin* directory:
 
 # Installation on MAC computer
 
+Check that the required software is instaalled:
+
+```
+gfortran --version
+mpicc --version
+cmake --version
+```
+
 > brew install gcc open-mpi openblas cmake
 
 > mkdir Software
