@@ -67,6 +67,8 @@ cmake --version
 
 > make
 
+Check the installed wannier90 executable:
+
 > wannier90.x --version
 ```
 Wannier90: 3.1.0
