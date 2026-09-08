@@ -41,4 +41,27 @@ Copy executables into *bin* directory:
 > cp *.x ~/bin
 
 
+# Installation on MAC computer
+
+> brew install gcc open-mpi openblas cmake
+
+> mkdir Software
+
+> cd Software
+
+> cd wannier90
+
+> mkdir build
+
+> cd build
+
+> cmake ..
+
+> make
+
+> wannier90.x --version
+```
+Wannier90: 3.1.0
+```
+  
 
